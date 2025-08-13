@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFHRegularisationUI", "WFHRegularisationUI\WFHRegularisationUI.csproj", "{536CC257-CFD3-48CD-AB39-7B630C4875C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFHRegularisationBLL", "WFHRegularisationBLL\WFHRegularisationBLL.csproj", "{C8C4AD17-6A2A-48E9-A835-5702BAA3E202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFHRegularisationDAL", "WFHRegurisationDAL\WFHRegularisationDAL.csproj", "{A4B08FE3-4610-46DA-8329-0C65ED69C812}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.16.33.192:8080/tfs/itap
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WFHRegularisationBLL\\WFHRegularisationBLL.csproj
+		SccProjectName1 = WFHRegularisationBLL
+		SccLocalPath1 = WFHRegularisationBLL
+		SccProjectUniqueName2 = WFHRegularisationUI\\WFHRegularisationUI.csproj
+		SccProjectName2 = WFHRegularisationUI
+		SccLocalPath2 = WFHRegularisationUI
+		SccProjectUniqueName3 = WFHRegurisationDAL\\WFHRegularisationDAL.csproj
+		SccProjectName3 = WFHRegurisationDAL
+		SccLocalPath3 = WFHRegurisationDAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{536CC257-CFD3-48CD-AB39-7B630C4875C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536CC257-CFD3-48CD-AB39-7B630C4875C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536CC257-CFD3-48CD-AB39-7B630C4875C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536CC257-CFD3-48CD-AB39-7B630C4875C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C4AD17-6A2A-48E9-A835-5702BAA3E202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C4AD17-6A2A-48E9-A835-5702BAA3E202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C4AD17-6A2A-48E9-A835-5702BAA3E202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C4AD17-6A2A-48E9-A835-5702BAA3E202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B08FE3-4610-46DA-8329-0C65ED69C812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B08FE3-4610-46DA-8329-0C65ED69C812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B08FE3-4610-46DA-8329-0C65ED69C812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B08FE3-4610-46DA-8329-0C65ED69C812}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

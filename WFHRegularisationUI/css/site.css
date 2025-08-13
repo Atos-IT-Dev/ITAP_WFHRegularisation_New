@@ -1,0 +1,427 @@
+:root {
+    --atos-main-blue: #0066A1; /* Atos primary blue */
+    --common-black: #000000; /* Black */
+    --common-white: #ffffff; /* White */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    background: #f9f9f9;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+    body.skin-blue .logo {
+        background-color: var(--atos-main-blue);
+        color: #f9f9f9;
+    }
+
+    body > .header .logo {
+        float: left;
+        font-size: 20px;
+        line-height: 50px;
+        padding: 0 10px;
+        width: 100%;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: 500;
+        height: 50px;
+    }
+
+
+.bg-primary {
+    background-color: var(--atos-main-blue) !important;
+    color: var(--common-white) !important;
+}
+
+.blue-ribbon {
+    font-size: 20px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 500;
+}
+
+.header-separator {
+    margin: 0 5px;
+}
+
+Background colors
+.bg-red,
+.bg-yellow,
+.bg-aqua,
+.bg-blue,
+.bg-light-blue,
+.bg-green,
+.bg-navy,
+.bg-teal,
+.bg-olive,
+.bg-lime,
+.bg-orange,
+.bg-fuchsia,
+.bg-purple,
+.bg-maroon,
+.bg-black {
+    color: #f9f9f9 !important;
+}
+
+.bg-gray {
+    background-color: #eaeaec !important;
+}
+
+.bg-black {
+    background-color: #222222 !important;
+}
+
+.bg-red {
+    background-color: #f56954 !important;
+}
+
+.bg-yellow {
+    background-color: #f39c12 !important;
+}
+
+.bg-aqua {
+    background-color: #00c0ef !important;
+}
+
+.bg-blue {
+    background-color: #0073b7 !important;
+}
+
+.bg-light-blue {
+    background-color: #3c8dbc !important;
+}
+
+.bg-green {
+    background-color: #00a65a !important;
+}
+
+.bg-navy {
+    background-color: #001f3f !important;
+}
+
+.bg-teal {
+    background-color: #39cccc !important;
+}
+
+.bg-olive {
+    background-color: #3d9970 !important;
+}
+
+.bg-lime {
+    background-color: #01ff70 !important;
+}
+
+.bg-orange {
+    background-color: #ff851b !important;
+}
+
+.bg-fuchsia {
+    background-color: #f012be !important;
+}
+
+.bg-purple {
+    background-color: #932ab6 !important;
+}
+
+.bg-maroon {
+    background-color: #85144b !important;
+}
+
+.hidden-inline-xs {
+    display: inline !important;
+}
+
+.versionspan {
+    margin: 0 10px 0 15px;
+    font-size: 14px;
+    color: #72afd2;
+}
+
+.environmenth6 {
+    font-size: 12px;
+    margin: 10px;
+}
+
+/*#region "User DropDown Options"*/
+
+a.user-dropdown {
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 10px;
+    display: block;
+}
+
+    a.user-dropdown:hover, a.user-dropdown:focus, a.user-dropdown:active {
+        background-color: #66A3C7;
+        color: white !important;
+    }
+
+ul.custom-dropdown-menu.dropdown-menu {
+    border-top-width: 0px !important;
+    width: 280px !important;
+    border-radius: 0px !important;
+    padding: 1px 0px 0px !important;
+}
+
+    ul.custom-dropdown-menu.dropdown-menu > li.user-header {
+        text-align: center;
+        padding: 10px;
+        background: rgb(60, 141, 188);
+    }
+
+    ul.custom-dropdown-menu.dropdown-menu li.user-header.dropdown-item > p {
+        z-index: 5;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 17px;
+        text-shadow: rgb(51, 51, 51) 2px 2px 3px;
+        margin-top: 10px;
+    }
+
+    ul.custom-dropdown-menu.dropdown-menu li.user-header > p > small {
+        display: block;
+        font-size: 12px;
+    }
+
+    ul.custom-dropdown-menu.dropdown-menu li.user-body {
+        padding: 15px;
+        border-bottom: 1px solid rgb(244, 244, 244);
+        border-top: 1px solid rgb(221, 221, 221);
+        font-size: 14px;
+        overflow: hidden;
+    }
+
+        ul.custom-dropdown-menu.dropdown-menu li.user-body span {
+            display: block;
+            max-height: 10px;
+        }
+
+    ul.custom-dropdown-menu.dropdown-menu > li.user-footer {
+        background-color: rgb(249, 249, 249);
+        padding: 10px;
+    }
+
+        ul.custom-dropdown-menu.dropdown-menu > li.user-footer .btn {
+            width: 100%;
+            font-size: 14px;
+        }
+
+.btn-flat {
+    background-color: #f8f9fa; /* light gray, similar to btn-default */
+    color: rgb(102, 102, 102);
+    box-shadow: none;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+    .btn-flat:hover {
+        background-color: #e2e6ea; /* darker gray on hover */
+        color: #000;
+        text-decoration: none;
+        background-color: rgb(244, 244, 244) !important;
+        border: 1px solid #ddd;
+    }
+
+    .btn-flat:active, .btn-flat:focus {
+        box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px inset;
+        border: 1px solid #ddd;
+    }
+/*#region "User DropDown Options"*/
+
+a {
+    color: #3c8dbc;
+    text-decoration: none;
+}
+
+    a:hover,
+    a:active,
+    a:focus {
+        outline: none;
+        text-decoration: none;
+        color: #72afd2;
+    }
+
+    a:hover, a:active, a:focus {
+        outline: none !important;
+        text-decoration: none !important;
+        color: #72afd2 !important;
+    }
+
+body > .header .navbar {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.skin-blue .navbar {
+    background-color: var(--common-black);
+}
+
+body > .header .navbar .nav > li.user > a {
+    font-weight: bold;
+}
+
+.skin-blue .navbar .nav > li > a:hover, .skin-blue .navbar .nav > li > a:active, .skin-blue .navbar .nav > li > a:focus, .skin-blue .navbar .nav .open > a, .skin-blue .navbar .nav .open > a:hover, .skin-blue .navbar .nav .open > a:focus {
+    background: #66A3C7;
+    color: #f6f6f6;
+}
+
+.skin-blue .navbar .nav a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+/*#region "CARD DESIGN"*/
+.card {
+    margin: 20px 0;
+}
+
+    .card .card-header .card-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0 !important;
+    }
+
+    .card .card-header i {
+        margin-right: 5px;
+    }
+/*#endregion "BOX DESIGN"*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 7px;
+        color: #444;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        border-radius: 0;
+    }
+
+.imp-note {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.input-group-addon.for-datetime {
+    border: 1px solid #dee2e6;
+}
+
+    .input-group-addon.for-datetime i {
+        margin: 10px;
+    }
+
+.imp-note.strong {
+    color: Red;
+}
+
+.imp-note.small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn.btn-primary {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+    font-size: 14px;
+    border-radius: 3px
+}
+
+    .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary.hover {
+        background-color: #367fa9;
+    }
+
+.form-control:read-only {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+.alert {
+    display: none;
+}
+
+    .hidden-label.show,
+    .alert.show {
+        display: block;
+    }
+
+.hidden-label {
+    display: none;
+}
+
+/*#region Addedby Suvarna start "*/
+.custom-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 13px;
+    width: 100%;
+}
+
+    .custom-table thead th {
+        font-weight: 600;
+        padding: 8px 10px;
+        background-color: #d6d6d6; /* light gray */
+        color: #333;
+        text-align: center;
+        height: 36px;
+        vertical-align: middle;
+    }
+
+    .custom-table tbody td {
+        padding: 6px 10px;
+        vertical-align: middle;
+        height: 36px;
+        color: #333;
+    }
+
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+
+    .custom-table tbody tr:hover {
+        background-color: #e6e6e6;
+        transition: 0.2s ease-in-out;
+    }
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.custom-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.custom-table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/*#region Addedby Suvarna end "*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}

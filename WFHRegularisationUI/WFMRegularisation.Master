@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WFMRegularisation.master.cs" Inherits="WFHRegularisationUI.WFMRegularisation" MasterPageFile="~/BetiCommonControls/MasterPage.master" %>
+
+<%@ MasterType VirtualPath="~/BetiCommonControls/MasterPage.master"%>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cph_CssPlaceHolder" runat="server">
+	<asp:ContentPlaceHolder ID="css" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph_JS_PlaceHolder" runat="server">
+	<asp:ContentPlaceHolder ID="js" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cph_MainContent" runat="server">
+	<asp:ContentPlaceHolder ID="maincontent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
