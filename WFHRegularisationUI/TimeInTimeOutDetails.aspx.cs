@@ -9,6 +9,7 @@ using WFHRegularisationBLL;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Web.UI.HtmlControls;
 namespace WFHRegularisationUI
 {
 	public partial class TimeInTimeOutDetails : System.Web.UI.Page
@@ -28,10 +29,9 @@ namespace WFHRegularisationUI
 			if (objWFHRegularisationBGSDAL.IsUserAssignedToBGS(HttpContext.Current.Session["DASID"].ToString()))
 			{
 				divMain.Visible = false;
-                //lblAlertMessage.Text = ConfigurationManager.AppSettings["BenchShiftEmployeesMessage"].ToString();
-                //lblAlertMessage.Type = BetiAlertMesageType.Error;
-                //lblAlertMessage.Visible = true;
-			}
+				string msg = ConfigurationManager.AppSettings["BenchShiftEmployeesMessage"].ToString();
+                ShowAlert("Error!", msg, "danger");
+            }
 			else
 			// Added by Shardul S. Mahajan on 02-Apr-2024 ends here.
 			{
@@ -52,8 +52,8 @@ namespace WFHRegularisationUI
 					}
 					else
 					{
-                        //lblAlertMessage.Text = ConfigurationManager.AppSettings["NotAuthorisedToAccessThisPage"].ToString();
-                        //lblAlertMessage.Type = BetiAlertMesageType.Error;
+						string msg = ConfigurationManager.AppSettings["NotAuthorisedToAccessThisPage"].ToString();
+                        ShowAlert("Error!", msg, "danger");
 						divMain.Visible = false;
 					}
 				}
@@ -232,8 +232,7 @@ namespace WFHRegularisationUI
 			{
 				gvTimeInTimeOutDetails.Visible = false;
 				ViewState["EmployeeTimeInTimeOut"] = null;
-                //lblAlertMessage.Text = NOTIMEENTRYFOUND;
-                //lblAlertMessage.Type = BetiAlertMesageType.Info;
+				ShowAlert("Info!", NOTIMEENTRYFOUND, "info");
 			}
 			return dtTimeInTimOutDetails;
 		}
@@ -272,9 +271,8 @@ namespace WFHRegularisationUI
 			{
 				gvTimeInTimeOutDetailsArchived.Visible = false;
 				ViewState["EmployeeTimeInTimeOutArchived"] = null;
-                //lblAlertMessage.Text = NOTIMEENTRYFOUND;
-                //lblAlertMessage.Type = BetiAlertMesageType.Info;
-			}
+                ShowAlert("Info!", NOTIMEENTRYFOUND, "info");
+            }
 			return dtTimeInTimOutDetailsArchived;
 		}
 
@@ -411,7 +409,34 @@ namespace WFHRegularisationUI
 			}
 		}
 
-		#endregion
+        #endregion
 
-	}
+        #region "Show Alert"
+
+        void ShowAlert(string Header, string Message, string Type)
+        {
+            //Pass one of these values in Type: success, danger, warning, info
+            AlertMessage.InnerHtml = Message;
+            AlertHeader.InnerHtml = Header;
+            AddClass(pageAlert, "alert-" + Type);
+            AddClass(pageAlert, "show");
+        }
+
+        void AddClass(HtmlGenericControl control, string className)
+        {
+            var current = control.Attributes["class"] ?? "";
+            if (!current.Split(' ').Contains(className))
+                control.Attributes["class"] = current + " " + className;
+        }
+
+        void RemoveClass(HtmlGenericControl control, string className)
+        {
+            var current = control.Attributes["class"] ?? "";
+            control.Attributes["class"] = string.Join(" ",
+                current.Split(' ').Where(cls => cls != className));
+        }
+
+        #endregion
+
+    }
 }
