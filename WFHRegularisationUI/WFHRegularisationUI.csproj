@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BETICommonUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\BETICommonUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="BETIControls, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\BETIControls.dll</HintPath>
+    </Reference>
     <Reference Include="CustomWsFederationAuthHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=56b847933c7b82c4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\CustomWsFederationAuthHandler.dll</HintPath>
